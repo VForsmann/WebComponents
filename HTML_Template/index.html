@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>POC Klausur Webcomponents</title>
+    <script defer src="index.js"></script>
+  </head>
+</html>
+
+<body>
+  <template id="task">
+    <style>
+      .title {
+        flex-grow: 1;
+        margin-left: 0.75rem;
+      }
+      /* ... */
+    </style>
+    <li id="tasks">
+      <span class="toggle-task"><span class="status"></span></span>
+      <span class="title"></span>
+    </li>
+  </template>
+  <div class="tasks"></div>
+  <hr>
+  <p>Example of Template Content</p>
+  <p>IMPORTANT: When you only use template.content, the content will be shifted, not cloned</p>
+  <p>After Shift the Document-Fragment-Node is empty</p>
+  <button id="myButton">TO SHIFT CLICK HERE</button>
+  <hr>
+  <template id="myTemplate">
+    <p>CONTENT of TEMPLATE</p>
+  </template>
+
+  <div id="copy">SHIFT HERE</div>
+</body>

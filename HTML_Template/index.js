@@ -12,3 +12,10 @@ for (let i = 0; i < tasks.length; i++) {
   taskElement.querySelector('.title').innerText = task.title;
   taskListElement.appendChild(taskElement);
 }
+
+document.getElementById('myButton').onclick = () => {
+  let element = document.getElementById('copy');
+  let template = document.getElementById('myTemplate');
+  // IMPORTANT: When you only use template.content, the content will be shifted, not cloned
+  element.appendChild(template.content);
+}
